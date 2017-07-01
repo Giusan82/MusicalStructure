@@ -10,9 +10,9 @@ Moreover, the list of file use a simply LinearLayout that generate dinamically t
 Here some screenshot:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Giusan82/MusicalStructure/master/Screenshot_2017-07-01-17-37-22.png" width="250"/>
-  <img src="https://raw.githubusercontent.com/Giusan82/MusicalStructure/master/Screenshot_2017-07-01-17-37-44.png" width="250"/>
-  <img src="https://raw.githubusercontent.com/Giusan82/MusicalStructure/master/Screenshot_2017-07-01-17-39-06.png" width="250"/>
+  <img src="Screenshot_2017-07-01-17-37-22.png" width="250"/>
+  <img src="Screenshot_2017-07-01-17-37-44.png" width="250"/>
+  <img src="Screenshot_2017-07-01-17-39-06.png" width="250"/>
 </p>
 
 
