@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Activities Labels -->
+    <string name="app_name">Media Player</string>
+    <string name="label_folderactivity">Music Library</string>
+    <string name="label_playlistactivity">Play Lists</string>
+    <string name="label_playeractivity">Player</string>
+    <string name="label_shopactivity">Media Store</string>
+    <string name="label_cartactivity">Cart</string>
+
+    <!-- Icons -->
+    <string name="icon_random">&#xf074;</string>
+    <string name="icon_retweet">&#xf079;</string>
+    <string name="icon_play">&#xf04b;</string>
+    <string name="icon_pause">&#xf04c;</string>
+    <string name="icon_stop">&#xf04d;</string>
+    <string name="icon_backward">&#xf049;</string>
+    <string name="icon_forward">&#xf050;</string>
+    <string name="icon_info">&#xf129;</string>
+    <string name="icon_search">&#xf002;</string>
+    <string name="icon_addcart">&#xf217;</string>
+
+    <!--Menu-->
+    <string name="folders">Folders</string>
+    <string name="playlists">PlayLists</string>
+    <string name="shop">Media Store</string>
+
+    <!-- PlayerActivity String-->
+    <string name="descriptionPlayerActivity">This is the Player screen, which retrieving variables passed from the other activities, using the intent putExtra() function.
+        This screen is so able to play all music files located in different folders. Here is used the Media Player class to play the media files
+    and MediaMetadataRetriever Class which retrieving frame and meta data from an input media file selected, touching on the button \"i\" at the bottom.
+    The Media Player is not jet implemented as service.</string>
+    <string name="song_detail">Song Details</string>
+    <string name="title">Title:</string>
+    <string name="file_name">File Name:</string>
+    <string name="album_name">Album Name:</string>
+    <string name="artist_name">Artist Name:</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_media">No media are playing</string>
+
+    <!--FoldersActivity String-->
+    <string name="descriptionFolderActivity"><b>Description:</b> \nThis screen allows to choose the
+        folder holding the songs. Touching on the folder above, this screen allows to launch the Player
+        Activity with an Media Player able to play all songs held in that folder.\nTouching on SD
+        Card you will open the Music folder that you need to have already created in your removable
+        external SD card.\n The button \"Add Folder\", is not implemented jet, it should be allow to
+        the user of choosing a preferred folder, using the class Android-DirectoryChooser found on
+        Github.com or the android-folder-picker-library found on android-arsenal.com. After that
+        will be created a database SQLite file, using the SQLiteOpenHelper class, which allow of
+        holding a list of the path folders chosen from the user. This allows to the app of remembering
+        the user chosen at the next launch.
+    </string>
+    <string name="music">Music</string>
+    <string name="vocalSounds">Vocal Sounds</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="sdfolder">Music folder on SD card</string>
+    <string name="addfolder">Add folder</string>
+
+    <!--PlayListActivity String-->
+    <string name="addplaylist">Create a new PlayList</string>
+    <string name="destriptionPlayListActivity"><b>Description:</b> \nThis screen only shows all PlayList
+        saved in the playlist folder of your device as pla format using an array. So to see their list, you need to have
+        some playlist saved in that folder. \n The button \"Create a new PlayList\", is not implemented jet.
+        The Media Player used for playing the songs is not able to use the file pla.
+        Using the FileReader class, this app will be able to open the play list files and through an array,
+        it will shows a list of all song contained in the playlist file after touched on it. It will then passes the path file
+        to the Media Player for playing them.
+    </string>
+
+    <!-- ShopActivity String -->
+    <string name="gocart">Go to Cart</string>
+    <string name="items">Items: </string>
+    <string name="descriptionShopActivity"><b>Description:</b>\nThis screen allows to buy musics online.
+        The user search the favorite song, listen the preview and then, if she/he like it, can add it to cart.
+        The app calculate the total amount of the item added to cart, displaying the number at the bottom.
+        When the user touch on the button \"Go to Cart\", using the intent putExtra() function, the app passes the
+        information to the next activity, to complete the payment. The list of songs comes from the online
+        database Spotify, where, using the Spotify Web API provided by them, it will be possible streaming the songs
+        and using the metadata is possible make an advanced search and order by category, as name, artist, album, year, popularity, rating and so on.
+    </string>
+
+    <!-- CartActivity String -->
+    <string name="total">Total: </string>
+    <string name="buy">Buy</string>
+    <string name="remove">Remove</string>
+    <string name="descriptionCartActivity"><b>Description:</b>\nThis screen shows the list of the item
+        added to cart. Here the user can remove the item simply touching on \"Remove\".
+        The app calculate the total amount and display the result at the bottom. Touching on the button \"Buy\",
+        the app initiates the checkout call, which can include different payment parameters and optional criteria for shipping,
+        tax, languages, and type of payments using the PayPal Mobile Payment Libraries (MPL).
+    </string>
+</resources>

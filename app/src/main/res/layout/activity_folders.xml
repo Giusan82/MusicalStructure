@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.android.musicalstructure.FoldersActivity">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            style="@style/menuParent"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/menuImage"
+                android:src="@drawable/folder"
+                android:contentDescription="@string/folders"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/folders"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            style="@style/menuParent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/menuImage"
+                android:src="@drawable/playlist"
+                android:contentDescription="@string/playlists"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playlists"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/menuParent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/menuImage"
+                android:src="@drawable/shopping"
+                android:contentDescription="@string/shop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shop"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footerBar"
+        style="@style/folderListParent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/addfolder" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView10"
+            android:layout_toRightOf="@+id/imageView10"
+            android:padding="7dp"
+            android:text="@string/addfolder" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/folderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footerBar"
+        android:layout_below="@id/menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                style="@style/folderListParent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/folderyellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:padding="7dp"
+                    android:text="@string/music" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                style="@style/folderListParent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/folderyellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:padding="7dp"
+                    android:text="@string/vocalSounds" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                style="@style/folderListParent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/folderyellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:padding="7dp"
+                    android:text="@string/ringtones" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                style="@style/folderListParent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/sdcard" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:layout_toRightOf="@+id/imageView9"
+                    android:padding="7dp"
+                    android:text="@string/sdfolder" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/descriptionFolderActivity" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
