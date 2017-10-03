@@ -17,3 +17,4 @@ Here some screenshot:
 
 
 The large TextView with description, was added because required from the project and the songs are not included.
+https://discussions.udacity.com/t/musical-structure-project-with-a-real-functioning-media-player/295025
